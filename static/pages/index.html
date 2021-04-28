@@ -8,22 +8,22 @@
         <title>Spyre - Slick contemporary multipurpose theme</title>
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="static/assets/img/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="static/assets/img/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="static/assets/img/favicons/favicon-16x16.png">
-        <link rel="manifest" href="static/assets/img/favicons/site.webmanifest">
-        <link rel="mask-icon" href="static/assets/img/favicons/safari-pinned-tab.svg" color="#f23838">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/static/assets/img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/static/assets/img/favicons/safari-pinned-tab.svg" color="#f23838">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
         <!-- Vendor Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700%7CRoboto:300,400,700" rel="stylesheet">
-        <link href="{{ url_for('static', filename='assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='assets/vendor/aos/dist/aos.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='/assets/vendor/material-design-iconic-font/dist/css/material-design-iconic-font.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='/assets/vendor/aos/dist/aos.css') }}" rel="stylesheet">
 
         <!-- Theme Stylesheets -->
-        <link href="{{ url_for('static', filename='assets/css/theme.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='/assets/css/theme.css') }}" rel="stylesheet">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129313359-1"></script>
@@ -38,11 +38,11 @@
 
     <body>
         <!-- Preloader -->
-        <div class="preloader">
-            <div class="spinner">
-                <div class="circles"></div>
-            </div>
-        </div>
+
+
+        
+
+
         <!-- End of Preloader -->
 
 
@@ -88,8 +88,8 @@
                                         <a href="#" class="spyre-nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li class="dropdown-menu-item"><a href="static/pages/home.html" class="dropdown-menu-link">Homepage</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/services.html" class="dropdown-menu-link">Services</a></li>
-                                            <li class="dropdown-menu-item"><a href="../pages/blog.html" class="dropdown-menu-link">Blog</a></li>
+                                            <li class="dropdown-menu-item"><a href="static/pages/services.html" class="dropdown-menu-link">Services</a></li>
+                                            <li class="dropdown-menu-item"><a href="static/pages/blog.html" class="dropdown-menu-link">Blog</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/blog-single.html" class="dropdown-menu-link">Blog single</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/portfolio.html" class="dropdown-menu-link">Portfolio</a></li>
                                             <li class="dropdown-menu-item"><a href="../pages/about.html" class="dropdown-menu-link">About</a></li>
@@ -196,7 +196,7 @@
         <main class="main minh-100vh">
             <!-- Section -->
             <section class="py-0 overflow-hidden text-center">
-                <div class="bg-container overlay overlay-60 parallax" data-rellax-percentage="0.5" style="background-image: url(../assets/img/backgrounds/bg-15.jpg)"></div>
+                <div class="bg-container overlay overlay-60 parallax" data-rellax-percentage="0.5" style="background-image: url(static/assets/img/backgrounds/bg-15.jpg)"></div>
                 <div class="container">
                     <div class="row h-100vh justify-content-center align-items-center">
                         <div class="col-lg-8">
@@ -357,112 +357,112 @@
                             <h4><a href="static/pages/portfolio.html" class="text-body">Portfolio</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/about.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/about.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/about.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/about.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/about.html" class="text-body">About</a></h4>
+                            <h4><a href="static/pages/about.html" class="text-body">About</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/contact.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/contact.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/contact.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/contact.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/contact.html" class="text-body">Contact</a></h4>
+                            <h4><a href="static/pages/contact.html" class="text-body">Contact</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/team.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/team.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/team.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/team.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/team.html" class="text-body">Team</a></h4>
+                            <h4><a href="static/pages/team.html" class="text-body">Team</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/faq.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/faq.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/faq.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/faq.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/faq.html" class="text-body">Faq</a></h4>
+                            <h4><a href="static/pages/faq.html" class="text-body">Faq</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/pricing.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/pricing.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/pricing.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/pricing.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/pricing.html" class="text-body">Pricing</a></h4>
+                            <h4><a href="static/pages/pricing.html" class="text-body">Pricing</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/careers.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/careers.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/careers.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/careers.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/careers.html" class="text-body">Careers</a></h4>
+                            <h4><a href="static/pages/careers.html" class="text-body">Careers</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/careers-single.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/careers-single.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/careers-single.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/careers-single.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/careers-single.html" class="text-body">Careers Single</a></h4>
+                            <h4><a href="static/pages/careers-single.html" class="text-body">Careers Single</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/coming-soon.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/coming-soon.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/coming-soon.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/coming-soon.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/coming-soon.html" class="text-body">Coming Soon</a></h4>
+                            <h4><a href="static/pages/coming-soon.html" class="text-body">Coming Soon</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/404.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/404.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/404.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/404.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/404.html" class="text-body">404</a></h4>
+                            <h4><a href="static/pages/404.html" class="text-body">404</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/sign-in.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/sign-in.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/sign-in.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/sign-in.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/sign-in.html" class="text-body">Sign In</a></h4>
+                            <h4><a href="static/pages/sign-in.html" class="text-body">Sign In</a></h4>
                         </div>
                         <div class="col-lg-6 mb-4 mb-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/recover-account.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/recover-account.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/recover-account.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/recover-account.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/recover-account.html" class="text-body">Recover Account</a></h4>
+                            <h4><a href="static/pages/recover-account.html" class="text-body">Recover Account</a></h4>
                         </div>
                         <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="../pages/sign-up.html" class="mb-3 d-block position-relative">
+                            <a href="static/pages/sign-up.html" class="mb-3 d-block position-relative">
                                 <div class="position-absolute d-flex justify-content-center align-items-center w-100 h-100 bg-secondary rounded text-white">
                                     <i class="fas fa-link fa-2x"></i>
                                 </div>
-                                <img src="../assets/img/printscreens/sign-up.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
+                                <img src="static/assets/img/printscreens/sign-up.jpg" alt="" class="position-relative img-fluid w-100 shadow-lg rounded opacity-1-hover" />
                             </a>
-                            <h4><a href="../pages/sign-up.html" class="text-body">Sign Up</a></h4>
+                            <h4><a href="static/pages/sign-up.html" class="text-body">Sign Up</a></h4>
                         </div>
                     </div>
                 </div>
@@ -479,7 +479,7 @@
                     <div class="col-lg-3 pt-3 ext-l bg-secondary text-center text-lg-left">
                         <div class="d-flex flex-column h-100">
                             <div class="pt-5 pt-lg-8 pb-4">
-                                <img src="../assets/img/logo-small.svg" alt="" width="92" class="mb-4" />
+                                <img src="static/assets/img/logo-small.svg" alt="" width="92" class="mb-4" />
                                 <p class="mb-4 mt-3 fs--1">New York, NY<br />
                                 62 Birchpond St.<br />
                                 Crystal Lake, NY 11762</p>
