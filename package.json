@@ -16,7 +16,8 @@
     "spyre"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "start": "node app.js"
   },
   "style": "pages/assets/css/spyre.css",
   "sass": "scss/spyre.scss",
