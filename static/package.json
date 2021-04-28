@@ -2,6 +2,7 @@
   "name": "spyre",
   "version": "1.4.0",
   "description": "Spyre - Slick contemporary multipurpose theme",
+  "postinstall": "gulp build",
   "keywords": [
     "css",
     "sass",
