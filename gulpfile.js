@@ -29,19 +29,19 @@ var PATHS = {
     },
     SRC: {
         BASE: './',
-        SCSS: './static/src/scss',
-        HTML: './static/**/*.html',
-        PAGES: './static/pages',
+        SCSS: './src/scss',
+        HTML: './**/*.html',
+        PAGES: './pages',
         JS: [
-            './static/node_modules/bluebird/js/browser/bluebird.min.js',
-            './static/src/js/**/*.js'
+            './node_modules/bluebird/js/browser/bluebird.min.js',
+            './src/js/**/*.js'
         ],
     },
     ASSETS: {
-        BASE: './static/assets',
-        CSS: './static/assets/css',
-        JS: './static/assets/js',
-        IMAGES: './static/assets/img/**/*.+(png|jpg|svg|gif)'
+        BASE: './assets',
+        CSS: './assets/css',
+        JS: './assets/js',
+        IMAGES: './assets/img/**/*.+(png|jpg|svg|gif)'
     }
 }
 
@@ -62,7 +62,7 @@ function browserSyncInit(done) {
 		server: {
             baseDir: PATHS.SRC.BASE
         },
-        startPath: 'templates/index.html'
+        startPath: 'pages/index.html'
 	});
 	done();
 }
@@ -104,7 +104,7 @@ gulp.task('minify:css', function() {
         .pipe(cleanCss())
         //.pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/assets/css'))
+        .pipe(gulp.dest(PATHS.DIST.BASE + '/assets/css'))
 });
 
 // Process JS file and return the stream
@@ -128,13 +128,13 @@ gulp.task('minify:js', function() {
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/assets/js'))
+        .pipe(gulp.dest(PATHS.DIST.BASE + '/assets/js'))
 });
 
 // Copy HTML
 gulp.task('copy:html', function() {
     return gulp.src(PATHS.SRC.PAGES + '/*')
-        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/pages'));
+        .pipe(gulp.dest(PATHS.DIST.BASE + '/pages'));
 });
 
 // Copy assets
