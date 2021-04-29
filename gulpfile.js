@@ -29,19 +29,19 @@ var PATHS = {
     },
     SRC: {
         BASE: './',
-        SCSS: './src/scss',
-        HTML: './**/*.html',
-        PAGES: './pages',
+        SCSS: './static/src/scss',
+        HTML: './static/**/*.html',
+        PAGES: './static/pages',
         JS: [
-            './node_modules/bluebird/js/browser/bluebird.min.js',
-            './src/js/**/*.js'
+            './static/node_modules/bluebird/js/browser/bluebird.min.js',
+            './static/src/js/**/*.js'
         ],
     },
     ASSETS: {
-        BASE: './assets',
-        CSS: './assets/css',
-        JS: './assets/js',
-        IMAGES: './assets/img/**/*.+(png|jpg|svg|gif)'
+        BASE: './static/assets',
+        CSS: './static/assets/css',
+        JS: './static/assets/js',
+        IMAGES: './static/assets/img/**/*.+(png|jpg|svg|gif)'
     }
 }
 
@@ -62,7 +62,7 @@ function browserSyncInit(done) {
 		server: {
             baseDir: PATHS.SRC.BASE
         },
-        startPath: 'pages/index.html'
+        startPath: 'templates/index.html'
 	});
 	done();
 }
@@ -104,7 +104,7 @@ gulp.task('minify:css', function() {
         .pipe(cleanCss())
         //.pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(PATHS.DIST.BASE + '/assets/css'))
+        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/assets/css'))
 });
 
 // Process JS file and return the stream
@@ -128,13 +128,13 @@ gulp.task('minify:js', function() {
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(PATHS.DIST.BASE + '/assets/js'))
+        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/assets/js'))
 });
 
 // Copy HTML
 gulp.task('copy:html', function() {
     return gulp.src(PATHS.SRC.PAGES + '/*')
-        .pipe(gulp.dest(PATHS.DIST.BASE + '/pages'));
+        .pipe(gulp.dest(PATHS.DIST.BASE + 'static/pages'));
 });
 
 // Copy assets
@@ -151,11 +151,3 @@ gulp.task('default', gulp.series('scss', 'browserSync'));
 
 // Production mode
 gulp.task('build', gulp.series('clean:dist', 'copy:html', 'copy:assets', 'scss', 'minify:css', 'minify:js'));
-
-gulp.task('serveprod', function() {
-    connect.server({
-      root: [your_project_path],
-      port: process.env.PORT || 5000, // localhost:5000
-      livereload: false
-    });
-  });
